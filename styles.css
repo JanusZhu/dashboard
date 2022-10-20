@@ -171,6 +171,7 @@ img {
 
 /*content starts here*/
 .content {
+  height: 100%;
   grid-area: content;
   background-color: #7dd3fc;
   display: grid;
@@ -197,9 +198,9 @@ img {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
 }
 .project-card {
-  height: auto;
   padding: 10px;
   background-color: #e0f2fe;
   border-radius: 20px;
