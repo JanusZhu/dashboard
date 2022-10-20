@@ -124,7 +124,6 @@ img {
 /*side starts here*/
 .sidebar {
   height: 100%;
-  position: fixed;
   grid-area: sidebar;
   background-color: #0369a1;
   text-transform: capitalize;
