@@ -124,6 +124,7 @@ img {
 /*side starts here*/
 .sidebar {
   height: 100%;
+  position: fixed;
   grid-area: sidebar;
   background-color: #0369a1;
   text-transform: capitalize;
@@ -196,11 +197,12 @@ img {
 .project-container {
   display: grid;
   gap: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 40%));
-  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, auto));
 }
 .project-card {
-  width: 600px;
+  width: 400px;
+  height: 300px;
   padding: 10px;
   background-color: #e0f2fe;
   border-radius: 20px;
