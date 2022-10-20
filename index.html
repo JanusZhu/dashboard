@@ -25,17 +25,22 @@
           <div class="search-bar"></div>
         </div>
         <div class="search-profile">
+          <img
+            src="./images/invert-colors.svg"
+            alt="svg"
+            onclick="invertTheme()"
+          />
           <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
             <path
               fill="currentColor"
               d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z"
             />
           </svg>
-          <img src="./images/profile.png" alt="profile-image" />
+          <img src="./images/profile-rounded.png" alt="profile-image" />
           <p>Janus Zhu</p>
         </div>
         <div class="profile-info">
-          <img src="./images/profile.png" alt="profile-info-img" />
+          <img src="./images/profile-rounded.png" alt="profile-info-img" />
           <div class="profile-text">
             <p>Hi there,</p>
             <p>Janus Zhu (@JanusZhu)</p>
@@ -47,8 +52,54 @@
           <button>Share</button>
         </div>
       </div>
-      <div class="sidebar"></div>
+      <div class="sidebar">
+        <div class="dashboard">
+          <img src="./images/dashboard.png" alt="dashboard-icon" />
+          <p>dashboard</p>
+        </div>
+        <div class="topbar">
+          <div class="home">
+            <img src="./images/home.png" alt="home-icon" />
+            <p>home</p>
+          </div>
+          <div class="profile">
+            <img src="./images/profile.png" alt="profile-icon" />
+            <p>profile</p>
+          </div>
+          <div class="messages">
+            <img src="./images/message.png" alt="message-icon" />
+            <p>messages</p>
+          </div>
+          <div class="history">
+            <img src="./images/history.png" alt="history-icon" />
+            <p>history</p>
+          </div>
+          <div class="tasks">
+            <img src="./images/task.png" alt="task-icon" />
+            <p>tasks</p>
+          </div>
+          <div class="communities">
+            <img src="./images/community.png" alt="community-icon" />
+            <p>communities</p>
+          </div>
+        </div>
+        <div class="bottombar">
+          <div class="settings">
+            <img src="./images/setting.png" alt="setting-icon" />
+            <p>settings</p>
+          </div>
+          <div class="support">
+            <img src="./images/support.png" alt="support-icon" />
+            <p>support</p>
+          </div>
+          <div class="privacy">
+            <img src="./images/privacy.png" alt="privacy-icon" />
+            <p>privacy</p>
+          </div>
+        </div>
+      </div>
       <div class="content"></div>
     </div>
+    <script></script>
   </body>
 </html>
