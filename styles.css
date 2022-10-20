@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  height: 100%;
+
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif, serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  user-select: none;
+}
+
+/* main content*/
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+}
+
+/*header section starts here*/
+.header {
+  gap: 20px;
+  padding: 20px 40px;
+  grid-area: header;
+  border: none;
+  background-color: #e0f2fe;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "search search-profile" "profile-info profile-btn";
+}
+.search {
+  grid-area: search;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar {
+  background-color: #0369a1;
+  border: none;
+  min-width: 50px;
+  margin: 0 20px;
+  border-radius: 20px;
+  height: 30px;
+  flex: 1;
+}
+
+.search-profile {
+  gap: 50px;
+  grid-area: search-profile;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  justify-items: center;
+  align-items: center;
+}
+.search-profile svg {
+  justify-self: right;
+}
+.search-profile img {
+  width: 40px;
+  height: 40px;
+}
+.profile-info {
+  display: flex;
+  gap: 20px;
+}
+.profile-info img {
+  height: 60px;
+}
+.profile-info p {
+  font-size: large;
+  font-weight: 800;
+}
+
+.profile-info :first-child {
+  font-size: small;
+}
+
+.profile-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-btn * {
+  width: max(30%, 80px);
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0369a1;
+  color: #f7f8fc;
+}
+/*side starts here*/
+.sidebar {
+  grid-area: sidebar;
+  background-color: #0369a1;
+}
+
+.content {
+  grid-area: content;
+  background-color: #7dd3fc;
+}
