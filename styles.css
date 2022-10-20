@@ -32,7 +32,8 @@ img {
 /* main content*/
 .main {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  gap: 0px;
+  grid-template-columns: 270px 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas:
     "sidebar header"
@@ -41,6 +42,7 @@ img {
 
 /*header section starts here*/
 .header {
+  position: sticky;
   gap: 20px;
   padding: 20px 60px;
   grid-area: header;
@@ -50,6 +52,7 @@ img {
   grid-template-rows: 1fr 2fr;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "search search-profile" "profile-info profile-btn";
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .search {
   grid-area: search;
@@ -120,6 +123,8 @@ img {
 }
 /*side starts here*/
 .sidebar {
+  height: 100%;
+  position: fixed;
   grid-area: sidebar;
   background-color: #0369a1;
   text-transform: capitalize;
@@ -167,4 +172,58 @@ img {
 .content {
   grid-area: content;
   background-color: #7dd3fc;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "project announcement" "project trending";
+}
+
+.project {
+  grid-area: project;
+
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project > p {
+  font-weight: 600;
+}
+.project-container {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.project-card {
+  height: 300px;
+  padding: 10px;
+  background-color: #e0f2fe;
+  border-radius: 20px;
+  border-left: 10px solid rgb(255, 132, 0);
+  font-size: calc(var(--default-size)+5px);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-size: calc(var(--default-size) + 10px);
+  font-weight: 600;
+}
+.card-btn {
+  justify-self: right;
+}
+.card-btn a {
+  margin: 10px;
+}
+
+.announcement {
+  grid-area: announcement;
+  padding: 20px;
+}
+
+.trending {
+  grid-area: trending;
+  padding: 20px;
 }
