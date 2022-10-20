@@ -197,8 +197,8 @@ img {
 .project-container {
   display: grid;
   gap: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(400px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
 }
 .project-card {
   padding: 10px;
