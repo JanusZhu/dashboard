@@ -1,6 +1,6 @@
 const root = document.querySelector(":root");
 let brightTheme = true;
-let fontSize = 15;
+let fontSize = 25;
 function invertTheme() {
   if (brightTheme === true) {
     brightTheme = !brightTheme;
