@@ -200,6 +200,7 @@ img {
   grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
 }
 .project-card {
+  width: 600px;
   padding: 10px;
   background-color: #e0f2fe;
   border-radius: 20px;
